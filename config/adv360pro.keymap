@@ -15,7 +15,7 @@
 #define COLEMAK 2
 #define DVORAK 3
 #define MOD 4
-#define MS 5 
+#define MS 5
 
 / {
     /* remove unused keys from layout and move thumb cluster to bottom */
@@ -95,7 +95,7 @@
             bindings = <
                 ___       ___       ___       ___       ___       ___       ___            ___       ___       ___       ___       ___       ___       ___
                 ___       ___       ___       ___       ___       ___       ___            ___       ___       ___       ___       ___       ___       ___
-                ___       ___       ___       ___       ___       ___       ___            ___       ___       ___       ___       ___       ___       ___
+                ___       ___       ___       ___       ___       ___       ___            ___       U_MS_L    U_MS_D    U_MS_U    U_MS_R    ___       ___
                 ___       ___       ___       ___       ___       ___                                ___       ___       ___       ___       ___       ___
                 ___       ___       ___       U_MS_L    U_MS_R                                                 U_MS_U    U_MS_D    ___       ___       ___
                                                                   U_BTN3    ___            ___       U_BTN3

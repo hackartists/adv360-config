@@ -41,7 +41,7 @@
 
         mac_layer {
             bindings = <
-                &kp EQUAL      &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &mo QWERTY     &mo QWERTY    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS
+                &kp EQUAL      &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &to QWERTY     &to QWERTY    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS
                 &kp TAB        &kp Q     &kp W     &kp E     &kp R     &kp T     &kp DEL        &kp LC(LALT)  &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSLH
                 &kp ESC        &kp A     &kp S     &kp D     &kp F     &kp G     &kp LA(SPACE)  &kp LC(SPACE) &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT
                 &kp LSHFT      &kp Z     &kp X     &kp C     &kp V     &kp B                                  &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
@@ -54,7 +54,7 @@
 
         colemak_layer {
             bindings = <
-                &kp EQUAL      &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &mo QWERTY     &mo QWERTY    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS
+                &kp EQUAL      &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &to QWERTY     &to QWERTY    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS
                 &kp TAB        &kp Q     &kp W     &kp F     &kp P     &kp B     &kp DEL        &kp LC(LALT)  &kp J     &kp L     &kp U     &kp Y     &kp SQT   &kp BSLH
                 &kp ESC        &kp A     &kp R     &kp S     &kp T     &kp G     &kp LA(SPACE)  &kp LC(SPACE) &kp M     &kp N     &kp E     &kp I     &kp O     &kp FSLH
                 &kp LSHFT      &kp Z     &kp X     &kp C     &kp D     &kp V                                  &kp K     &kp H     &kp COMMA &kp DOT   &kp SEMI  &kp RSHFT
@@ -67,7 +67,7 @@
 
         dvorak_layer {
             bindings = <
-                &kp EQUAL      &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &mo QWERTY     &mo QWERTY    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS
+                &kp EQUAL      &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &to QWERTY     &to QWERTY    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS
                 &kp TAB        &kp SQT   &kp COMMA &kp DOT   &kp P     &kp Y     &kp DEL        &kp LC(LALT)  &kp F     &kp G     &kp C     &kp R     &kp L     &kp BSLH
                 &kp ESC        &kp A     &kp O     &kp E     &kp U     &kp I     &kp LA(SPACE)  &kp LC(SPACE) &kp D     &kp H     &kp T     &kp N     &kp S     &kp FSLH
                 &kp LSHFT      &kp SEMI  &kp Q     &kp J     &kp K     &kp X                                  &kp B     &kp M     &kp W     &kp V     &kp Z     &kp RSHFT
@@ -81,25 +81,25 @@
         mod {
             bindings = <
                 ___       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 ___              ___         &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 ___
-                ___       &kp F1       &kp F2       &kp F3       &kp F4       &to MAC      &bootloader      &bootloader ___          &kp F1       &kp F2       &kp F3       &kp F4       ___
-                ___       &kp F5       &kp F6       &kp F7       &kp F8       &to COLEMAK  &to MS           ___         ___          &kp F5       &kp F6       &kp F7       &kp F8       ___
-                ___       &kp F9       &kp F10      &kp F11      &kp F12      &to DVORAK                                ___          &kp F9       &kp F10      &kp F11      &kp F12      ___
+                ___       &kp F1       &kp F2       &kp F3       &kp F4       &to MAC      &bootloader      &bootloader &to MAC      &kp F1       &kp F2       &kp F3       &kp F4       ___
+                ___       &kp F5       &kp F6       &kp F7       &kp F8       &to COLEMAK  &to MS           &to MS      &to COLEMAK  &kp F5       &kp F6       &kp F7       &kp F8       ___
+                ___       &kp F9       &kp F10      &kp F11      &kp F12      &to DVORAK                                &to DVORAK   &kp F9       &kp F10      &kp F11      &kp F12      ___
                 ___       ___          ___          &bl BL_INC   &bl BL_DEC                                                          &bl BL_INC   &bl BL_DEC   ___          ___          ___
-                                                                              &bt BT_CLR   &bt BT_CLR       &bt BT_CLR  &bt BT_CLR
-                                                                 &out OUT_TOG &bl BL_TOG   ___              ___         &bl BL_TOG  &out OUT_TOG
-                                                                                           ___              ___
+                                                               &rgb_ug RGB_MEFS_CMD 5      &bt BT_CLR       &bt BT_CLR      &rgb_ug RGB_MEFS_CMD 5
+                                                  &out OUT_TOG             &bl BL_TOG &rgb_ug RGB_TOG       &rgb_ug RGB_TOG &bl BL_TOG              &out OUT_TOG
+                                                                                                  ___       ___
             >;
         };
 
         mouse {
             bindings = <
-                ___       ___       ___       ___       ___       ___       ___            ___       ___       ___       ___       ___       ___       ___
-                ___       ___       ___       ___       ___       ___       ___            ___       ___       ___       ___       ___       ___       ___
-                ___       ___       ___       ___       ___       ___       ___            ___       U_MS_L    U_MS_D    U_MS_U    U_MS_R    ___       ___
-                ___       ___       ___       ___       ___       ___                                ___       ___       ___       ___       ___       ___
-                ___       ___       ___       U_MS_L    U_MS_R                                                 U_MS_U    U_MS_D    ___       ___       ___
-                                                                  U_BTN3    ___            ___       U_BTN3
-                                                        U_BTN1    U_BTN2    U_WH_L         U_WH_U    U_BTN2    U_BTN1
+                ___       ___       ___       ___       ___       ___       &to QWERTY     &to QWERTY ___       ___       ___       ___       ___       ___
+                ___       ___       ___       ___       U_WH_L    ___       ___            ___        ___       U_WH_R    ___       ___       ___       ___
+                ___       ___       U_BTN1    U_BTN2    U_BTN3    U_WH_D    ___            ___        U_WH_U    U_MS_L    U_MS_D    U_MS_U    U_MS_R    ___
+                ___       ___       ___       ___       ___       ___                                 ___       ___       ___       ___       ___       ___
+                ___       ___       ___       U_MS_L    U_MS_R                                                  U_MS_U    U_MS_D    ___       ___       ___
+                                                                  U_BTN3    ___            ___        U_BTN3
+                                                        U_BTN1    U_BTN2    U_WH_L         U_WH_U     U_BTN2    U_BTN1
                                                                             U_WH_R         U_WH_D
             >;
         };
